@@ -11,9 +11,12 @@
     <link rel="stylesheet" href="style.css">
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Humidity vs. Latitude</title>
+  </head>
   
+  <body>
     <nav class="navbar fixed-top navbar-expand-lg">
-      <span class="navbar-brand">Weather World</span>
+      <span class="navbar-brand">Weather Trends</span>
       <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -39,11 +42,37 @@
           <li class="nav-item">
             <a class="nav-link" href="data.html" tabindex="-1">Data</a>
           </li>
-
         </ul>
       </div>
     </nav>
-    
+
+
+    <!--------------------------->
+    <div class="container">
+      
+      <div class="row" id="heading_row">
+        <div class="col-md-12">
+          <h1>Humidity vs. Latitude</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        
+        <!--Visualisation goes here-->
+        <div class="col-md-6" id="left-column-viz">        
+          <img src="visualizations/Latitude_vs_Humidity (%).png">
+        </div>        
+        
+        <!--Visualization description goes here-->
+        <div class="col-md-6" id="right-column-viz">
+          <p>Unlike the relationship between temperature and latitude, humidity does not show a clear trend as latitude rises or falls. In the visual, it's clear that maximum humidity (represented as '1.0' on the y-axis) occurs up and down the globe.</p> 
+          <p>Perhaps the one insightful takeaway from this is that humidity accross the globe is higher than one may think--the data is mostly clustered between ~70% and ~90% without correlation to latitudinal position.</p>
+        </div>
+
+      </div>
+    </div>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

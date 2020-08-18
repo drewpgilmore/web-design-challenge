@@ -11,9 +11,13 @@
     <link rel="stylesheet" href="style.css">
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Temperature vs. Latitude</title>
   
+  </head>
+  <body>
+
     <nav class="navbar fixed-top navbar-expand-lg">
-      <span class="navbar-brand">Weather World</span>
+      <span class="navbar-brand">Weather Trends</span>
       <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -39,11 +43,36 @@
           <li class="nav-item">
             <a class="nav-link" href="data.html" tabindex="-1">Data</a>
           </li>
-
         </ul>
       </div>
     </nav>
-    
+
+
+    <!--------------------------->
+    <div class="container">
+      
+      <div class="row" id="heading_row">
+        <div class="col-md-12">
+          <h1>Max Temperature vs. Latitude</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        
+        <!--Visualisation goes here-->
+        <div class="col-md-6" id="left-column-viz">        
+          <img src="visualizations/Latitude_vs_Temperature (F).png">
+        </div>        
+        
+        <!--Visualization description goes here-->
+        <div class="col-md-6" id="right-column-viz">
+          <p>As one would expect, the data affirmed that temperature rises as absolute latitude goes down (approaching the equator). The visual shows an upside-down "v" pattern, with the apex of temperature records occuring around +20 degrees North. One could assert that, due to the higher population concentration in the Northern Hemisphere, that the data would be more abundant for Northern cities, which appears to be the case here.</p>
+        </div>
+
+      </div>
+    </div>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

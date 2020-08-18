@@ -11,9 +11,12 @@
     <link rel="stylesheet" href="style.css">
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  
+    <title>Windiness vs. Latitude</title>
+  </head>
+
+  <body>
     <nav class="navbar fixed-top navbar-expand-lg">
-      <span class="navbar-brand">Weather World</span>
+      <span class="navbar-brand">Weather Trends</span>
       <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -39,11 +42,37 @@
           <li class="nav-item">
             <a class="nav-link" href="data.html" tabindex="-1">Data</a>
           </li>
-
         </ul>
       </div>
     </nav>
-    
+
+
+    <!--------------------------->
+    <div class="container">
+      
+      <div class="row" id="heading_row">
+        <div class="col-md-12">
+          <h1>Wind Speed (MPH) vs. Latitude</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        
+        <!--Visualisation goes here-->
+        <div class="col-md-6" id="left-column-viz">        
+          <img src="visualizations/Latitude_vs_Wind Speed (mph).png">
+        </div>        
+        
+        <!--Visualization description goes here-->
+        <div class="col-md-6" id="right-column-viz">
+          <p>Wind speed here is measured in MPH. How else would one go about guaging "windiness"? </p>
+          <p>Apart from a higher data collection from Northern cities, there again does not appear to be a correlation between wind speeds and latitude. One takeaway here is the visual indication that wind speeds, for the most part, are pretty low across the globe. As is an obstacle with other measurements, this is only taking into account city locations, which may neglect to tell a larger story about wind speeds in remote areas.</p>
+        </div>
+
+      </div>
+    </div>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

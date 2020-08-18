@@ -1,7 +1,10 @@
+/*Applies to all pages*/
+/*Set all fonts to Roboto, Google font link in html file*/
 html * {
     font-family: 'Roboto', sans-serif;
 }
 
+/*Nav bar styling*/
 nav {
     background-color: rgb(255, 255, 153);
 }
@@ -24,5 +27,84 @@ nav a {
 
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  }
-  
+}
+
+/*All paragraph fonts*/
+p {
+    font-weight: 300;
+    font-size: x-large;
+}
+
+/*End all pages elements*/
+
+
+
+/*Page specific elements*/
+/*Index (landing) page*/
+/*Container in which content will live*/
+
+.container {
+    margin-top: 75px;
+    padding: 20px;
+}
+
+/*Headings for each section*/
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+#right-column-index h1 {
+    text-align: center;
+}
+
+#right-column-index .col-md-6 {
+    padding: 2px 2px 2px 2px;
+}
+
+#right-column-index img {
+    /* border: 2px solid black; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 95%;
+    max-height: 95%;
+}
+
+/*-----------*/
+/*Visualization Pages*/
+
+#heading_row {
+    text-align: center;
+}
+
+#left-column-viz img {
+    max-width: 100%;
+}
+
+#right-column-viz {
+    padding-top: 45px;
+}
+
+/* .container .row h1 {
+    text-align: center;
+} */
+
+
+/*Data page*/
+
+.dataframe {
+    align-self: center;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Comparisons Page*/
+
+h3 {
+    text-align: center;
+    margin-bottom: 0px;
+}

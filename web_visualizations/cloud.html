@@ -11,9 +11,12 @@
     <link rel="stylesheet" href="style.css">
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  
+    <title>Cloudiness vs. Latitude</title>
+  </head>
+
+  <body>
     <nav class="navbar fixed-top navbar-expand-lg">
-      <span class="navbar-brand">Weather World</span>
+      <span class="navbar-brand">Weather Trends</span>
       <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -39,11 +42,37 @@
           <li class="nav-item">
             <a class="nav-link" href="data.html" tabindex="-1">Data</a>
           </li>
-
         </ul>
       </div>
     </nav>
-    
+
+
+    <!--------------------------->
+    <div class="container">
+      
+      <div class="row" id="heading_row">
+        <div class="col-md-12">
+          <h1>Cloudiness vs. Latitude</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        
+        <!--Visualisation goes here-->
+        <div class="col-md-6" id="left-column-viz">        
+          <img src="visualizations/Latitude_vs_Cloudiness (%).png">
+        </div>        
+        
+        <!--Visualization description goes here-->
+        <div class="col-md-6" id="right-column-viz">
+          <p>Upon collecting and analyzing this data, it became clear that cloudiness may be more difficult to measure than some of the other variables observed.</p>
+          <p>In the visual, it's clear that a great deal of records seem to fall right on whole percentages (ie. 20%, 40%, 75%, etc.). Like with humidity, there is no discernable relationship between cloudiness and latitude. Clouds seem to go where they go, no matter where you are!</p>
+        </div>
+
+      </div>
+    </div>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -11,9 +11,14 @@
     <link rel="stylesheet" href="style.css">
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Weather Trends</title>
   
+  </head>
+
+  <body>
+    <!--Navbar-->
     <nav class="navbar fixed-top navbar-expand-lg">
-      <span class="navbar-brand">Weather World</span>
+      <span class="navbar-brand">Weather Trends</span>
       <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -39,11 +44,54 @@
           <li class="nav-item">
             <a class="nav-link" href="data.html" tabindex="-1">Data</a>
           </li>
-
         </ul>
       </div>
     </nav>
     
+    <!------------------------------------------------------------------------------>
+    <!--Content container-->
+    <div class="container">
+      
+      <!--Row in which content will be placed-->
+      <div class="row">
+        
+        <!--Project description section-->
+        <div class="col-md-6" id="left-column-index">
+          <h1>Project Description</h1>
+          <p>The purpose of this exercise was to visualize weather data as it relates to latitude. The variables observed were maximum temperature (F), humidity (%), cloudiness, and windiness.</p>
+          <p>This data was collected through the OpenWeatherMap API accross 500 randomly generated cities from accross the world. Weather data from each city was taken and stored, along with the city's coordinates. Each weather pattern variable was then plotted against the corresponsing latitude with the intention of identifying potential trends across the globe.</p>
+        </div>
+        
+        <!--Visualisation Previews go here-->
+        <div class="col-md-6" id="right-column-index">
+          <h1>Visualizations</h1>
+          
+            <!--First row of 2 visuals-->
+            <div class="row">
+              <div class="col-md-6">
+                <a href="temp.html"><img src="visualizations/Latitude_vs_Temperature (F).png"></a>
+              </div>         
+              <div class="col-md-6">
+                <a href="humid.html"><img src="visualizations/Latitude_vs_Humidity (%).png"></a>
+              </div>
+            </div>
+
+            <!--Second row of 2 visuals-->
+            <div class="row">
+              <div class="col-md-6">
+                <a href="cloud.html"><img src="visualizations/Latitude_vs_Cloudiness (%).png"></a>
+              </div>  
+              <div class="col-md-6">
+                <a href="wind.html"><img src="visualizations/Latitude_vs_Wind Speed (mph).png"></a>
+              </div>
+            </div>
+        
+        </div>
+
+      </div>
+    
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
